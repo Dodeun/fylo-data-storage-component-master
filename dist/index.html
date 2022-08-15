@@ -6,14 +6,35 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <title>Frontend Mentor | </title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
+  <main>
+    <div class="fylo-card">
+      <h1><img src="img/logo.svg" alt="Fylo Logo"></h1>
+      <div class="buttons-container">
+        <a href="#"><img src="img/icon-document.svg" alt="Document icon"></a>
+        <a href="#"><img src="img/icon-folder.svg" alt="Folder icon"></a>
+        <a href="#"><img src="img/icon-upload.svg" alt="Upload icon"></a>
+      </div>
+    </div>
+    <div class="stats-card">
+      <p>You’ve used <span>815 GB</span> of your storage</p>
+      <div class="bar-empty">
+        <div class="bar-current">
+        </div>
+      </div>
+      <div class="storage-min-max">
+        <p class="min">0 GB</p>
+        <p class="max">1000 GB</p>
+      </div>
+      <div class="storage-remaining">
+        <p>185</p>
+        <p>GB LEFT</p>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

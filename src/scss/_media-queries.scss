@@ -1,0 +1,60 @@
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: url(../img/bg-desktop.png);
+        background-color: $c_bg_button;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    main {
+        max-width: 920px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+
+        .fylo-card {
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .stats-card {
+            width: 100%;
+            max-width: 540px;
+            padding-bottom: 3.3rem;
+            position: static;
+            
+            p {
+                text-align: left;
+            }
+
+            .storage-remaining {
+                right: 0;
+                top: 0;
+                left: auto;
+                bottom: auto;
+                transform: translate(-2rem, 0);
+                border-bottom-right-radius: 0;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    transform: translateY(100%);
+                    border-bottom: 1.5rem solid transparent;
+                    border-right: 1.5rem solid $c_white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        background-size: contain;
+    }
+}
